@@ -5,10 +5,13 @@ class Wheel(object):
         self.model = model
         self.weight = weight
         self.cost = cost
+
 class High(Wheel):
     intensity = 'high'
+
 class Medium(Wheel):
     intensity = 'medium'
+
 class Low(Wheel):
     intensity = 'low'
     
@@ -19,9 +22,9 @@ class Frame(object):
         self.cost = cost
 
 class Bike(object):
-    makeup = {'wheels': None, 'frame': None}
     Manufacturer = None
     def __init__(self, model, Wheel, Frame):
+        makeup = {'wheels': None, 'frame': None}
         self.model = model
         self.Wheel = Wheel
         self.Frame = Frame
@@ -71,8 +74,8 @@ class BikeShop(object):
         return self.prof
     
 class Customer(object):
-    own = {}
     def __init__(self, firstname, budget):
+        self.own = {}
         self.firstname = firstname
         self.budget = budget
     def buy(self, Bike, BikeShop):

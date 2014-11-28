@@ -38,6 +38,7 @@ The script should:
 <li>Print the initial inventory of the bike shop for each bike it carries.</li>
 <li>Have each of the three customers purchase a bike then print the name of the bike the customer purchased, the cost, and how much money they have left over in their bicycle fund.</li>
 <li>After each customer has purchased their bike, the script should print out the bicycle shop's remaining inventory for each bike, and how much profit they have made selling the three bikes.</li>
+</ul>
 
 
 <h2>Extra Challenge</h2>

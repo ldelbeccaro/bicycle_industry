@@ -67,12 +67,13 @@ Then you should modify your Bicycle class. The updated class should:
 <ul>
 <li>Bicycle
 <ul>
-<li>Be comprised of two wheels of the same type and a frame
-<li>Have a weight equal to the sum of the weight of the frame and two wheels
-<li>Have a cost to produce equal to the sum of the two wheels' and frame's cost to produce
-<li>You may also need to update your testing script to reflect the changes that you have made here.
+<li>Be comprised of two wheels of the same type and a frame</li>
+<li>Have a weight equal to the sum of the weight of the frame and two wheels</li>
+<li>Have a cost to produce equal to the sum of the two wheels' and frame's cost to produce</li>
 </ul>
 </ul>
+
+You may also need to update your testing script to reflect the changes that you have made here.
 
 
 <h2>Extension Exercise</h2>

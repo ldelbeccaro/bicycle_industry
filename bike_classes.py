@@ -28,10 +28,10 @@ class BikeShop(object):
             self.prof += (self.sold[Bike] - Bike.cost)
         return self.prof
 class Customer(object):
-    own = {}
     def __init__(self, firstname, budget):
         self.firstname = firstname
         self.budget = budget
+        self.own = {}
     def buy(self, Bike, BikeShop):
         price = Bike.cost * (1 + BikeShop.margin)
         if price > self.budget:

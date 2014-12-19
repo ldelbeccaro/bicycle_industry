@@ -33,12 +33,11 @@ for person in mikecustomers:
     for bike in mikeshop.inventory:
         price = bike.cost * (1 + mikeshop.margin)
         if price <= person.budget:
-            print bike.model, "{:.2f}".format(price)
+            print bike.model, '{:.2f}'.format(price)
             person.affordable.append(bike)
-    print person.affordable
 mikeshop.printstock()
 for person in mikecustomers:
     person.buy(random.choice(person.affordable), mikeshop)
-    print person.own, 'Budget remaining:', "{:.2f}".format(person.budget)
+    print person.firstname, 'bought:', person.own, 'Budget remaining:', "{:.2f}".format(person.budget)
 mikeshop.printstock()
-print 'Profit:', mikeshop.profit()
+print mikeshop.name, 'profit:', '{:.2f}'.format(mikeshop.profit())

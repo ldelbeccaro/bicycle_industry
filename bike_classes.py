@@ -24,7 +24,7 @@ class Frame(object):
 class Bike(object):
     Manufacturer = None
     def __init__(self, model, Wheel, Frame):
-        makeup = {'wheels': None, 'frame': None}
+        self.makeup = {'wheels': None, 'frame': None}
         self.model = model
         self.Wheel = Wheel
         self.Frame = Frame
@@ -85,7 +85,7 @@ class Customer(object):
         elif BikeShop.inventory[Bike] < 1:
             print 'Cannot buy ' + str(Bike.model) + '! None left in stock.'
         else:
-            self.own[Bike.model] = price
+            self.own[Bike.model] = '{:.2f}'.format(price)
             self.budget -= price
             BikeShop.sell_bike(Bike)
         return self.own

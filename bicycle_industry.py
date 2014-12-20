@@ -38,6 +38,6 @@ for person in mikecustomers:
 mikeshop.printstock()
 for person in mikecustomers:
     person.buy(random.choice(person.affordable), mikeshop)
-    print person.firstname, 'bought:', person.own, 'Budget remaining:', "{:.2f}".format(person.budget)
+    print person.firstname, 'bought:', person.own, 'Budget remaining:', '{:.2f}'.format(person.budget)
 mikeshop.printstock()
 print mikeshop.name, 'profit:', '{:.2f}'.format(mikeshop.profit())

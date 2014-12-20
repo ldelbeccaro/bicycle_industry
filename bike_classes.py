@@ -39,7 +39,7 @@ class Customer(object):
         elif BikeShop.inventory[Bike] < 1:
             print 'Cannot buy ' + str(Bike.model) + '! None left in stock.'
         else:
-            self.own[Bike.model] = price
+            self.own[Bike.model] = '{:.2f}'.format(price)
             self.budget -= price
             BikeShop.sell_bike(Bike)
         return self.own
